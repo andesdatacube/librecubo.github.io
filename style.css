@@ -382,3 +382,45 @@ div.admonition,
 .important>p.admonition-title {
   color: #bc3e31 !important;
 }
+
+
+
+
+
+.imgdesenfoque {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  background: url(/imgs/lr.png);
+  background-size: 450px;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5);
+  border: 5px solid #262626;
+}
+
+.divisor {
+  top: 0;
+  left: 0;
+  height: 440px;
+  width: 50%;
+  max-width: 100%;
+  resize: horizontal;
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+  background: url(/imgs/sr.png);
+  background-size: 440px;
+  border: 2px solid #262626;
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+
+.divisor:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 13px;
+  height: 20px;
+  background: linear-gradient(-45deg, #262626 50%, transparent 0);
+  cursor: ew-resize;
+}
