@@ -424,3 +424,76 @@ div.admonition,
   background: linear-gradient(-45deg, #262626 50%, transparent 0);
   cursor: ew-resize;
 }
+
+.container-slider {
+  position: relative;
+  width: 400px;
+  height: 390px;
+  border: 2px solid white;
+}
+
+.container-slider .background-img {
+  background-image: url(./imgs/lr.png);
+}
+
+.container-slider .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 400px 100%;
+}
+
+
+.container-slider .foreground-img {
+  background-image: url(./imgs/sr.png);
+  width: 50%;
+}
+
+.container-slider .slider {
+  position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  margin: 0;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-slider .slider-button {
+  pointer-events: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  left: calc(50% - 18px);
+  top: calc(50% - 18px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-slider .slider-button:before {
+  content: "";
+  padding: 3px;
+  display: inline-block;
+  border: solid #5D5D5D;
+  border-width: 0 2px 2px 0;
+  transform: rotate(135deg);
+}
+
+.container-slider .slider-button:after {
+  content: "";
+  padding: 3px;
+  display: inline-block;
+  border: solid #5D5D5D;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg);
+}

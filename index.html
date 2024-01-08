@@ -100,7 +100,7 @@
                 </button></a>
             </div>
         </div> <!-- columna -->
-        <div class="col-md-4 order-md-first">
+        <div class="col-md-4">
           <img class="banner-logo" src="imgs/logoo1.png" style="width: 110%; margin-left: -5%;">
         </div> <!-- columna -->
       </div> <!-- fila -->
@@ -256,9 +256,15 @@
                 </button>
               </a>
             </div>
-        </div> <!-- columna -->
-        <div class="col-md-5 order-md-last fs-6 imgdesenfoque">
-          <div class="divisor" style="margin-left:-3%;"></div>
+        </div>
+        <!-- columna -->
+        <div style="flex: 1; display:flex; justify-content:center; align-items:center;">
+          <div class="container-slider">
+            <div class="img background-img"></div>
+            <div class="img foreground-img"></div>
+            <input type="range" min="1" max="100" value="50" class="slider" name="slider" id="slider">
+            <div class="slider-button"></div>
+          </div>
         </div> <!--columna-->
       </div> <!-- fila -->
     </div> <!-- container -->
@@ -765,7 +771,7 @@
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
 
-
+  <script src="./slider.js"></script>
 </body>
 
 
